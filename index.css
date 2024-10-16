@@ -1,0 +1,641 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+.banner {
+    width: 100%;
+    height: 731px; /* Maintain height for larger screens */
+    background-image: url(wallpaper.svg);
+    background-size: cover;
+    background-position: center; /* Center the background */
+}
+
+.banner h3 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2rem; /* Base font size */
+    line-height: 1.5; /* Base line height */
+    text-align: center;
+    padding: 2rem;
+}
+
+.banner .hr {
+    width: 90%;
+    color: white;
+    margin: 0 auto;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    color: white;
+    padding: 5rem 1rem; /* Adjusted padding for smaller screens */
+    text-align: center;
+}
+
+.hero-section h1,
+.hero-section span {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem; /* Base font size */
+    font-weight: 600;
+}
+
+.hero-section p {
+    max-width: 731px;
+    line-height: 1.5;
+    font-size: 1.25rem; /* Base font size */
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.hero-section button {
+    width: 197px;
+    height: 51px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid white;
+    margin-top: 3rem;
+}
+
+/* Section 1 */
+.section1 {
+    width: 88%;
+    padding: 5rem 0; /* Vertical spacing */
+    margin: 0 auto; /* Center the section */
+}
+
+.section1 .div {
+    text-align: center;
+}
+
+.section1 .div h1 {
+    font-family: "Poppins", sans-serif;
+    color: #855aff;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.div span {
+    font-family: "Poppins", sans-serif;
+    color: #5f6264;
+    font-size: 3rem;
+}
+
+.section1 .div hr {
+    margin-top: 40px;
+}
+
+.div p {
+    max-width: 100%;
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+}
+
+.section1 .diagram {
+    max-width: 1280px;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.diagram img {
+    flex: 1 1 45%; /* Responsive sizing */
+    max-width: 100%; /* Prevent overflow */
+}
+
+.diagram p {
+    flex: 1 1 45%; /* Responsive sizing */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #5f6264;
+    font-size: 1.4375rem; /* Responsive font size */
+}
+
+.section1 .button {
+    display: flex;
+    justify-content: center;
+}
+
+.section1 .button button {
+    width: 90%; /* Responsive width */
+    max-width: 481px; /* Keep a max width */
+    height: 93px;
+    border: 1px solid #5f6264;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #5f6264;
+    font-size: 1.25rem;
+    margin-top: 3rem;
+}
+
+/* Section 2 */
+.section2 {
+    width: 100%;
+    background-color: #855aff;
+    display: flex;
+    justify-content: center;
+}
+
+.section2 .inner2 {
+    width: 88%;
+    padding: 5rem 0; /* Vertical spacing */
+    color: white;
+}
+
+.inner2 h1 {
+    padding-top: 5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.inner2 span {
+    font-family: "Poppins", sans-serif;
+    font-size: 4.5rem; /* Responsive size */
+}
+
+.inner2 div {
+    width: 98px;
+    height: 15px;
+    background-color: #d9d9d9;
+    margin: 3rem 0;
+}
+
+.inner2 p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4375rem;
+    font-weight: 400;
+    margin-top: 3rem;
+    color: white;
+}
+
+.inner2 img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin: 5rem 0;
+}
+
+/* Section 3 */
+.section3 {
+    width: 100%;
+    background-color: #262829;
+    display: flex;
+    justify-content: center;
+}
+
+.section3 .inner3 {
+    width: 88%;
+    padding: 5rem 0; /* Vertical spacing */
+}
+
+.inner3 h1,
+.inner3 h1 span {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.inner3 h1 span {
+    color: #855aff;
+}
+
+.inner3 p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4375rem;
+    margin: 5rem 0;
+    color: white;
+}
+
+.inner3 .card {
+    max-width: 990px;
+    border: 2px solid #98f9ff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 1rem; /* Added padding for better spacing */
+}
+
+.inner3 .card .div {
+    flex: 1 1 45%; /* Default responsive sizing */
+    padding: 2rem; /* Reduced padding for better responsiveness */
+    box-sizing: border-box; /* Include padding in width calculations */
+    color: white;
+}
+
+.inner3 .card img {
+    flex: 1 1 45%; /* Default responsive sizing */
+    border-radius: 10px;
+    padding: 1rem; /* Reduced padding for better responsiveness */
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Button styling */
+.inner3 .button{
+    text-align: center;
+}
+.inner3 .button button {
+    width: 90%; /* Responsive width */
+    max-width: 481px; /* Keep a max width */
+    height: 80px;
+    border: 1px solid #98f9ff;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1.25rem; /* Base font size */
+    margin-top: 3rem;
+    background-color: transparent; /* Background for visibility */
+    border-radius: 5px; /* Aesthetics */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+.inner3 .button button:hover {
+    background-color: #81e6ff; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .banner {
+        height: 500px; /* Reduced height for tablets */
+    }
+    .banner h3 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+    .hero-section h1,
+    .hero-section span {
+        font-size: 2.5rem; /* Smaller font size */
+    }
+    .hero-section p {
+        font-size: 1.1rem; /* Smaller font size */
+    }
+    .hero-section button {
+        width: 150px; /* Reduced width */
+    }
+    .inner3 .card .div {
+        flex: 1 1 100%; /* Stack items on smaller screens */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+    .inner3 .card img {
+        flex: 1 1 100%; /* Stack images on smaller screens */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+    .inner3 .button button {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 2rem; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 300px; /* Further reduced height for mobile */
+    }
+    .banner h3 {
+        font-size: 1.25rem; /* Smaller font size */
+    }
+    .hero-section h1,
+    .hero-section span {
+        font-size: 2rem; /* Smaller font size */
+    }
+    .hero-section p {
+        font-size: 1rem; /* Smaller font size */
+    }
+    .hero-section button {
+        width: 100%; /* Full width for mobile */
+}
+
+}
+
+/* Section 4 */
+.section4 {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.section4 .div {
+    width: 100%;
+    padding-top: 10vh; /* Adjust for responsiveness */
+    text-align: center;
+}
+
+.div h1 {
+    font-family: "Poppins", sans-serif;
+    color: #262829;
+    font-weight: 600;
+    font-size: 3vw; /* Responsive font size */
+    line-height: 8vw; /* Responsive line height */
+    letter-spacing: -3%;
+}
+
+.div span {
+    font-family: "Poppins", sans-serif;
+    color: #5f6264;
+    font-weight: 300;
+    font-size: 3vw; /* Responsive font size */
+    line-height: 8vw; /* Responsive line height */
+}
+
+.div p {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    color: #5f6264;
+    font-weight: 400;
+    font-size: 2vw; /* Responsive font size */
+    line-height: 2.5vw; /* Responsive line height */
+    letter-spacing: -3%;
+    padding-top: 5vh; /* Responsive padding */
+    margin: 0 5%; /* Responsive margin */
+}
+
+.section4 .testimonials {
+    width: 100%;
+    max-width: 1050px; /* Limit max width */
+    color: #BCBCBC;
+    margin: 5vh auto; /* Responsive margin */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5vh; /* Responsive padding */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.testimonials .test-1, .testimonials .test-2 {
+    flex: 1 1 45%; /* Responsive sizing */
+    border-radius: 20px;
+    border: 1px solid #eff0f6;
+    margin: 1vh; /* Responsive margin */
+}
+
+.test-1 .discription1, .test-2 .discription2 {
+    padding: 2vh; /* Responsive padding */
+}
+
+.test-1 .discription1 p, .test-2 .discription2 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #5f6264; 
+    font-size: 1.5vw; /* Responsive font size */
+    line-height: 2.5vw; /* Responsive line height */
+    letter-spacing: -3%;
+    margin: 1vh 0; /* Responsive margin */
+}
+
+.test-1 .discription1 .img, .test-2 .discription2 .img {
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh; /* Responsive padding */
+}
+
+.discription1 .img img, .discription2 .img img {
+    width: 4vw; /* Responsive size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+}
+
+.discription1 .img div, .discription2 .img div {
+    margin-left: 1vh;
+}
+
+.discription1 .img div p, .discription2 .img div p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #170f49;
+    font-size: 1.5vw; /* Responsive font size */
+    line-height: 2vw; /* Responsive line height */
+    margin: 0;
+}
+
+.discription1 .img div span, .discription2 .img div span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #6f6c90;
+    font-size: 1.5vw; /* Responsive font size */
+    line-height: 2vw; /* Responsive line height */
+}
+
+/* Section 5 */
+.section5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0; /* Responsive padding */
+}
+
+.section5 .inner5 {
+    width: 88%;
+}
+
+.inner5 span, .inner5 h1 {
+    font-family: "Poppins", sans-serif;
+    color: #262829;
+    font-size: 3vw; /* Responsive font size */
+    line-height: 8vw; /* Responsive line height */
+}
+
+.inner5 hr {
+    margin-top: 5vh; /* Responsive margin */
+}
+
+.inner5 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #5f6264;
+    font-size: 2vw; /* Responsive font size */
+    line-height: 2.5vw; /* Responsive line height */
+    margin: 5vh 0; /* Responsive margin */
+    text-transform: capitalize;
+}
+
+.inner5 .table {
+    border-radius: 20px;
+    border: 2px solid #e4e4e4;
+    gap: 1vh; /* Responsive gap */
+    display: flex;
+    justify-content: center;
+}
+
+.table img {
+    width: 100%;
+    max-width: 100%; /* Ensure images don't overflow */
+}
+
+.inner5 .button {
+    display: flex;
+    justify-content: center;
+}
+
+.inner5 .button button {
+    width: 90%; /* Responsive width */
+    max-width: 481px; /* Keep a max width */
+    height: 93px;
+    border: 1px solid #5f6264;
+    padding: 10px;
+    gap: 10px; /* Reduced gap for smaller screens */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #5f6264;
+    font-size: 2vw; /* Responsive font size */
+    line-height: 60px;
+    text-align: center;
+    margin-top: 5vh; /* Responsive margin */
+}
+
+/* Section 6 */
+.section6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh; /* Responsive margin */
+}
+
+.section6 .inner6 {
+    width: 88%;
+}
+
+.section6 .inner6 span, .inner6 h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300; /* Default weight */
+    color: #262829;
+    font-size: 3vw; /* Responsive font size */
+    line-height: 8vw; /* Responsive line height */
+}
+
+.inner6 hr {
+    margin-top: 5vh; /* Responsive margin */
+}
+
+.inner6 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #5f6264;
+    font-size: 2vw; /* Responsive font size */
+    line-height: 2.5vw; /* Responsive line height */
+    margin: 5vh 0; /* Responsive margin */
+}
+
+.inner6 div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh; /* Responsive margin */
+}
+
+.inner6 div button {
+    width: 90%; /* Responsive width */
+    max-width: 272px; /* Keep a max width */
+    height: 51px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem; /* Responsive font size */
+    line-height: auto;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #5f6264;
+    color: #5f6264;
+    background-color: white;
+    margin-top: 20px; /* Responsive margin */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover effect */
+.inner6 div button:hover {
+    background-color: #5f6264; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .inner6 div button {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        height: 51px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .inner6 div button {
+        font-size: 0.8rem; /* Further adjust font size for very small screens */
+        height: 47px; /* Further adjust height */
+    }
+}
+
+
+.inner6 span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2vw; /* Responsive font size */
+    line-height: 2.5vw; /* Responsive line height */
+    color: #5f6264;
+    text-align: center;
+}
+
+.inner6 .social-media-icon {
+    display: flex;
+    justify-content: center;
+    padding: 2vh 0; /* Responsive padding */
+}
+
+.inner6 .social-media-icon i {
+    font-size: 3vw; /* Responsive icon size */
+    padding: 5px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2vw; /* Responsive font size */
+    line-height: 2.5vw; /* Responsive line height */
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh; /* Responsive padding */
+}
+
+/* Media Queries for further adjustments */
+@media (max-width: 768px) {
+    .div h1,
+    .div span,
+    .inner5 span,
+    .inner5 h1,
+    .section6 .inner6 span,
+    .section6 h1 {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+        line-height: 6vw; /* Adjust line height */
+    }
+
+    .div p,
+    .inner5 p,
+    .inner6 p {
+        font-size: 3vw; /* Adjust font size */
+    }
+
+    .testimonials .test-1,
+    .testimonials .test-2 {
+        flex-basis: 100%; /* Full width on smaller screens */
+        margin: 1vh 0; /* Adjust margin */
+    }
+
+    .inner5 .button button {
+        width: 100%; /* Full width button on smaller screens */
+    }
+
+    .inner6 div button {
+        width: 100%; /* Full width button on smaller screens */
+    }
+}
