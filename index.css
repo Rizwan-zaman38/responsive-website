@@ -79,9 +79,39 @@
     }
 }
 
+@media (min-width: 480px) and (max-width: 600px) {
+    .banner {
+        height: auto; /* Allow height to adjust for smaller screens */
+        padding: 2rem 1rem; /* Add padding for small screens */
+    }
+
+    .banner h3 {
+        font-size: 1.75rem; /* Decrease font size */
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .banner .hr {
+        width: 80%; /* Adjust hr width */
+    }
+
+    .banner h1 {
+        font-size: 2.5rem; /* Decrease font size */
+        padding-top: 3rem; /* Adjust padding */
+    }
+
+    .banner span {
+        font-size: 2.5rem; /* Decrease font size */
+    }
+
+    .banner p {
+        font-size: 1.1rem; /* Decrease font size */
+        padding-top: 1rem; /* Adjust padding */
+    }
+}
+
 @media (max-width: 480px) {
     .banner {
-        height: 315px; /* Further reduced height for mobile */
+        height: 360px; /* Further reduced height for mobile */
     }
     .banner h3 {
         font-size: 1.25rem; /* Smaller font size */
@@ -144,6 +174,36 @@
 .banner .button button:hover {
     background-color: transparent; /* Background color on hover */
     color: white; /* Text color on hover */
+}
+
+@media (max-width: 330px) {
+    .banner {
+        height: auto; /* Allow height to adjust for smaller screens */
+        padding: 1rem; /* Add padding for small screens */
+    }
+
+    .banner h3 {
+        font-size: 1.5rem; /* Decrease font size */
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .banner .hr {
+        width: 80%; /* Adjust hr width */
+    }
+
+    .banner h1 {
+        font-size: 2rem; /* Decrease font size */
+        padding-top: 2rem; /* Adjust padding */
+    }
+
+    .banner span {
+        font-size: 2rem; /* Decrease font size */
+    }
+
+    .banner p {
+        font-size: 1rem; /* Decrease font size */
+        padding-top: 1rem; /* Adjust padding */
+    }
 }
 
 /* Section 1 */
@@ -270,6 +330,10 @@
         font-size: 1rem; /* Smaller font size for mobile */
     }
 
+    .section1 .diagram p{
+        font-size: 1.1rem;
+    }
+
     .section1 .button button {
         height: 70px; /* Smaller height for mobile */
         font-size: 1rem; /* Further adjust font size */
@@ -301,7 +365,7 @@
 
 .inner2 span {
     font-family: "Poppins", sans-serif;
-    font-size: 4.5rem; /* Responsive size */
+    font-size: 3rem; /* Base size */
 }
 
 .inner2 div {
@@ -325,8 +389,35 @@
     margin: 5rem 0;
 }
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .inner2 h1, .inner2 span {
+        font-size: 2.5rem; /* Adjust for medium screens */
+    }
+
+    .inner2 p {
+        font-size: 1.2rem; /* Adjust for medium screens */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .inner2 h1, .inner2 span {
+        font-size: 2rem; /* Adjust for extra small screens */
+    }
+
+    .inner2 p {
+        font-size: 0.875rem; /* Adjust for extra small screens */
+    }
+
+    .inner2 div {
+        width: 14%; /* Make the div responsive */
+    }
+}
+
+
 /* Section 3 */
-.section3 {
+.section3 { 
     width: 100%;
     background-color: #262829;
     display: flex;
@@ -375,18 +466,19 @@
     color: white;
 }
 
-.inner3 .card .div h1{
+.inner3 .card .div h1 {
     font-family: "Poppins", sans-serif;
     color: white;
     font-weight: 700;
-    font-size: 45.42px;
+    font-size: 3rem;
     line-height: 68.13px;
     letter-spacing: -3%;
     text-align: left;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
-.inner3 .card .div p{
+
+.inner3 .card .div p {
     font-family: "Poppins", sans-serif;
     color: white;
     font-weight: 300;
@@ -396,7 +488,6 @@
     text-align: left;
     padding: 0;
     margin: 0;
-
 }
 
 .inner3 .card img {
@@ -407,39 +498,52 @@
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Responsive adjustments */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .inner3 .card {
-        flex-direction: column; /* Stack items on smaller screens */
-        align-items: center; /* Center items */
+    .inner3 h1 {
+        font-size: 2.5rem; /* Decrease font size */
     }
-
+    
+    .inner3 p {
+        font-size: 1.2rem; /* Decrease paragraph font size */
+    }
+    
     .inner3 .card .div {
-        flex: 1 1 100%; /* Full width on smaller screens */
-        padding: 1rem; /* Adjust padding for smaller screens */
+        flex: 1 1 48%; /* Adjust for medium screens */
+        padding: 1.5rem; /* Reduce padding */
     }
-
+    
     .inner3 .card img {
-        flex: 1 1 100%; /* Full width for images on smaller screens */
-        padding: 0.5rem; /* Adjust padding for images */
+        flex: 1 1 100%; /* Make images full width */
+        margin: 0 auto; /* Center images */
     }
 }
 
 @media (max-width: 480px) {
-    .inner3 .card {
-        padding: 0.5rem; /* Reduce padding for mobile */
+    .inner3 h1 {
+        font-size: 2.5rem; /* Further decrease font size */
     }
-
-    .inner3 .card .div p{
-        margin: 1rem 0;
+    
+    .inner3 p {
+        font-size: 1rem; /* Further decrease paragraph font size */
+        margin: 3rem 0; /* Adjust margins */
     }
-
+    
     .inner3 .card .div {
-        padding: 1rem; /* Further adjust padding for mobile */
+        flex: 1 1 100%; /* Stack cards on smaller screens */
+        padding: 1rem; /* Further reduce padding */
     }
 
+    .inner3 .card .div p {
+        font-size: 18px;
+    }
+
+    .inner3 .card .div h1 {
+        font-size: 30px;
+    }
+    
     .inner3 .card img {
-        padding: 0.25rem; /* Further adjust padding for mobile */
+        padding: 0.5rem; /* Reduce image padding */
     }
 }
 
@@ -700,7 +804,7 @@
     font-weight: 400;
     color: #5f6264;
     font-size: 20px; /* Base font size */
-    line-height: 60px; /* Base line height */
+    /* line-height: 60px; Base line height */
     letter-spacing: -3%;
     text-align: center;
     margin-top: 150px;
@@ -758,7 +862,7 @@
         font-size: 16px; /* Adjust font size for mobile */
         margin-top: 80px; /* Adjust margin */
         padding: 0%;
-        line-height: 50px;
+        /* line-height: 50px; */
     }
 }
 
@@ -883,7 +987,14 @@
     .inner6 div button {
         width: 100%; /* Full width button for tablets */
         height: 50px; /* Adjust height */
-        font-size: 14px; /* Adjust font size */
+        font-size: 13px; /* Adjust font size */
+        line-height: 16px;
+    }
+    .inner6 div button:hover {
+        background-color: #5f6264; /* Change background color on hover */
+        color: white; /* Change text color on hover */
+        transform: translateY(-2px); /* Slight lift effect */
+        cursor: pointer; /* Change cursor to pointer */
     }
 }
 
@@ -905,6 +1016,12 @@
         font-size: 12px; /* Adjust font size for mobile */
         margin-top: 30px; /* Adjust margin */
         line-height: 15px;
+    }
+    .inner6 div button:hover {
+        background-color: #5f6264; /* Change background color on hover */
+        color: white; /* Change text color on hover */
+        transform: translateY(-2px); /* Slight lift effect */
+        cursor: pointer; /* Change cursor to pointer */
     }
 
     .inner6 .social-media-icon i {
@@ -939,7 +1056,7 @@
 
 @media (max-width: 480px) {
     .footer {
-        font-size: 18px; /* Further adjust font size for mobile */
+        font-size: 15px; /* Further adjust font size for mobile */
         line-height: 28px; /* Further adjust line height for mobile */
         padding: 10px 0; /* Adjust padding for mobile */
     }
