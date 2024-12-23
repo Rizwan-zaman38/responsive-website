@@ -725,6 +725,11 @@
         font-size: 16px;
         padding: 50px 20px; /* Adjust padding */
     }
+    .test-1 .discription1 p,
+    .test-2 .discription2 p {
+        line-height: 28px;
+        margin: 0px;
+    }
 }
 
 .section5 {
