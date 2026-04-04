@@ -1,23 +1,28 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Ensure consistent sizing */
+    box-sizing: border-box;
+    /* Ensure consistent sizing */
 }
 
 .banner {
     width: 100%;
-    height: 731px; /* Maintain height for larger screens */
+    height: 731px;
+    /* Maintain height for larger screens */
     background-image: url("./images/wallpaper.svg");
     background-size: cover;
-    background-position: center; /* Center the background */
+    background-position: center;
+    /* Center the background */
 }
 
 .banner h3 {
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 2rem; /* Base font size */
-    line-height: 1.5; /* Base line height */
+    font-size: 2rem;
+    /* Base font size */
+    line-height: 1.5;
+    /* Base line height */
     text-align: center;
     padding: 2rem;
 }
@@ -30,19 +35,23 @@
 
 .banner h1 {
     font-family: "Poppins", sans-serif;
-    font-size: 3rem; /* Base font size */
+    font-size: 3rem;
+    /* Base font size */
     font-weight: 600;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
+    /* Stack elements vertically */
     align-items: center;
     color: white;
-    padding-top: 5rem; /* Adjusted padding for smaller screens */
+    padding-top: 5rem;
+    /* Adjusted padding for smaller screens */
     text-align: center;
 }
 
 .banner span {
     font-family: "Poppins", sans-serif;
-    font-size: 3rem; /* Base font size */
+    font-size: 3rem;
+    /* Base font size */
     font-weight: 400;
     color: white;
     text-align: center;
@@ -52,7 +61,8 @@
 .banner p {
     max-width: 731px;
     line-height: 1.5;
-    font-size: 1.25rem; /* Base font size */
+    font-size: 1.25rem;
+    /* Base font size */
     color: white;
     text-align: center;
     margin-inline: auto;
@@ -62,70 +72,96 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .banner {
-        height: 530px; /* Reduced height for tablets */
+        height: 530px;
+        /* Reduced height for tablets */
     }
+
     .banner h3 {
-        font-size: 1.5rem; /* Smaller font size */
+        font-size: 1.5rem;
+        /* Smaller font size */
     }
-    .banner h1{
+
+    .banner h1 {
         padding-top: 1rem;
     }
+
     .banner h1,
     .banner span {
-        font-size: 2.5rem; /* Smaller font size */
+        font-size: 2.5rem;
+        /* Smaller font size */
     }
+
     .banner p {
-        font-size: 1.1rem; /* Smaller font size */
+        font-size: 1.1rem;
+        /* Smaller font size */
     }
 }
 
 @media (min-width: 480px) and (max-width: 600px) {
     .banner {
-        height: auto; /* Allow height to adjust for smaller screens */
-        padding: 2rem 1rem; /* Add padding for small screens */
+        height: auto;
+        /* Allow height to adjust for smaller screens */
+        padding: 2rem 1rem;
+        /* Add padding for small screens */
     }
 
     .banner h3 {
-        font-size: 1.75rem; /* Decrease font size */
-        padding: 1rem; /* Adjust padding */
+        font-size: 1.75rem;
+        /* Decrease font size */
+        padding: 1rem;
+        /* Adjust padding */
     }
 
     .banner .hr {
-        width: 80%; /* Adjust hr width */
+        width: 80%;
+        /* Adjust hr width */
     }
 
     .banner h1 {
-        font-size: 2.5rem; /* Decrease font size */
-        padding-top: 3rem; /* Adjust padding */
+        font-size: 2.5rem;
+        /* Decrease font size */
+        padding-top: 3rem;
+        /* Adjust padding */
     }
 
     .banner span {
-        font-size: 2.5rem; /* Decrease font size */
+        font-size: 2.5rem;
+        /* Decrease font size */
     }
 
     .banner p {
-        font-size: 1.1rem; /* Decrease font size */
-        padding-top: 1rem; /* Adjust padding */
+        font-size: 1.1rem;
+        /* Decrease font size */
+        padding-top: 1rem;
+        /* Adjust padding */
     }
 }
 
 @media (max-width: 480px) {
     .banner {
-        height: 360px; /* Further reduced height for mobile */
+        height: 360px;
+        /* Further reduced height for mobile */
     }
+
     .banner h3 {
-        font-size: 1.25rem; /* Smaller font size */
+        font-size: 1.25rem;
+        /* Smaller font size */
         padding: 0.5rem;
     }
-    .banner h1{
+
+    .banner h1 {
         padding-top: 1rem;
     }
+
     .banner h1,
     .banner span {
-        font-size: 1.5rem; /* Smaller font size */
+        font-size: 1.5rem;
+        /* Smaller font size */
     }
+
     .banner p {
-        font-size: 0.9rem; /* Smaller font size */
+        font-size: 0.9rem;
+        /* Smaller font size */
         padding-top: 0.5rem;
     }
 }
@@ -138,79 +174,105 @@
 }
 
 .banner .button button {
-    max-width: 197px; /* Maintain a maximum width */
+    max-width: 197px;
+    /* Maintain a maximum width */
     height: 51px;
     font-family: "Poppins", sans-serif;
     border-radius: 3px;
     padding: 10px;
     border: 1px solid white;
     margin-top: 3rem;
-    background-color: white; /* Default background */
-    color: black; /* Default text color */
-    cursor: pointer; /* Change cursor on hover */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    background-color: white;
+    /* Default background */
+    color: black;
+    /* Default text color */
+    cursor: pointer;
+    /* Change cursor on hover */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition */
 }
+
 @media (max-width: 768px) {
     .banner .button button {
-        height: 45px; /* Slightly smaller height for tablets */
-        font-size: 1rem; /* Adjust font size */
+        height: 45px;
+        /* Slightly smaller height for tablets */
+        font-size: 1rem;
+        /* Adjust font size */
     }
 }
 
 @media (max-width: 480px) {
     .banner .button {
         display: block;
-        gap: 2px; /* Stack buttons on smaller screens */
+        gap: 2px;
+        /* Stack buttons on smaller screens */
         text-align: center;
     }
-    
+
     .banner .button button {
-        height: 40px; /* Smaller height for mobile */
-        font-size: 0.9rem; /* Further adjust font size */
-        margin-top: 1rem; /* Adjust margin for spacing */
+        height: 40px;
+        /* Smaller height for mobile */
+        font-size: 0.9rem;
+        /* Further adjust font size */
+        margin-top: 1rem;
+        /* Adjust margin for spacing */
     }
 }
 
 .banner .button button:hover {
-    background-color: transparent; /* Background color on hover */
-    color: white; /* Text color on hover */
+    background-color: transparent;
+    /* Background color on hover */
+    color: white;
+    /* Text color on hover */
 }
 
 @media (max-width: 330px) {
     .banner {
-        height: auto; /* Allow height to adjust for smaller screens */
-        padding: 1rem; /* Add padding for small screens */
+        height: auto;
+        /* Allow height to adjust for smaller screens */
+        padding: 1rem;
+        /* Add padding for small screens */
     }
 
     .banner h3 {
-        font-size: 1.5rem; /* Decrease font size */
-        padding: 1rem; /* Adjust padding */
+        font-size: 1.5rem;
+        /* Decrease font size */
+        padding: 1rem;
+        /* Adjust padding */
     }
 
     .banner .hr {
-        width: 80%; /* Adjust hr width */
+        width: 80%;
+        /* Adjust hr width */
     }
 
     .banner h1 {
-        font-size: 2rem; /* Decrease font size */
-        padding-top: 2rem; /* Adjust padding */
+        font-size: 2rem;
+        /* Decrease font size */
+        padding-top: 2rem;
+        /* Adjust padding */
     }
 
     .banner span {
-        font-size: 2rem; /* Decrease font size */
+        font-size: 2rem;
+        /* Decrease font size */
     }
 
     .banner p {
-        font-size: 1rem; /* Decrease font size */
-        padding-top: 1rem; /* Adjust padding */
+        font-size: 1rem;
+        /* Decrease font size */
+        padding-top: 1rem;
+        /* Adjust padding */
     }
 }
 
 /* Section 1 */
 .section1 {
     width: 88%;
-    padding: 5rem 0; /* Vertical spacing */
-    margin: 0 auto; /* Center the section */
+    padding: 5rem 0;
+    /* Vertical spacing */
+    margin: 0 auto;
+    /* Center the section */
 }
 
 .section1 .div {
@@ -221,13 +283,15 @@
     font-family: "Poppins", sans-serif;
     color: #855aff;
     font-weight: 600;
-    font-size: 3rem; /* Base font size */
+    font-size: 3rem;
+    /* Base font size */
 }
 
 .section1 .div span {
     font-family: "Poppins", sans-serif;
     color: #5f6264;
-    font-size: 3rem; /* Base font size */
+    font-size: 3rem;
+    /* Base font size */
 }
 
 .section1 .div hr {
@@ -238,7 +302,8 @@
     max-width: 100%;
     font-weight: 300;
     color: #5F6264;
-    font-size: 1.8rem; /* Base font size */
+    font-size: 1.8rem;
+    /* Base font size */
     margin-top: 2rem;
 }
 
@@ -247,21 +312,26 @@
     margin: 5rem 1rem;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    flex-wrap: wrap;
+    /* Allow wrapping for responsiveness */
     border: 1px solid #ebebeb;
 }
 
 .section1 .diagram img {
-    flex: 1 1 45%; /* Responsive sizing */
-    max-width: 100%; /* Prevent overflow */
+    flex: 1 1 45%;
+    /* Responsive sizing */
+    max-width: 100%;
+    /* Prevent overflow */
 }
 
 .section1 .diagram p {
-    flex: 1 1 45%; /* Responsive sizing */
+    flex: 1 1 45%;
+    /* Responsive sizing */
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: #5f6264;
-    font-size: 1.4375rem; /* Responsive font size */
+    font-size: 1.4375rem;
+    /* Responsive font size */
     padding: 4rem 0;
 }
 
@@ -271,73 +341,116 @@
 }
 
 .section1 .button button {
-    width: 90%; /* Responsive width */
-    max-width: 481px; /* Keep a max width */
-    height: 93px; /* Base height */
+    width: 90%;
+    /* Responsive width */
+    max-width: 481px;
+    /* Keep a max width */
+    height: 93px;
+    /* Base height */
     border: 1px solid #5f6264;
     padding: 10px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: #5f6264;
-    font-size: 1.25rem; /* Base font size */
+    font-size: 1.25rem;
+    /* Base font size */
     margin-top: 3rem;
-    background-color: white; /* Default background */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-    cursor: pointer; /* Change cursor on hover */
+    background-color: white;
+    /* Default background */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition */
+    cursor: pointer;
+    /* Change cursor on hover */
 }
 
 /* Hover effect */
 .section1 .button button:hover {
-    background-color: #5f6264; /* Change background color on hover */
-    color: white; /* Change text color on hover */
+    background-color: #5f6264;
+    /* Change background color on hover */
+    color: white;
+    /* Change text color on hover */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .section1 .div h1 {
-        font-size: 2.5rem; /* Smaller font size for tablets */
+        font-size: 2.5rem;
+        /* Smaller font size for tablets */
     }
 
     .section1 .div span {
-        font-size: 2.5rem; /* Smaller font size for tablets */
+        font-size: 2.5rem;
+        /* Smaller font size for tablets */
     }
 
     .section1 .div p {
-        font-size: 1.1rem; /* Adjust paragraph font size */
+        font-size: 1.1rem;
+        /* Adjust paragraph font size */
     }
 
     .section1 .button button {
-        height: 80px; /* Slightly smaller height for tablets */
-        font-size: 1.15rem; /* Adjust font size */
+        height: 80px;
+        /* Slightly smaller height for tablets */
+        font-size: 1.15rem;
+        /* Adjust font size */
     }
 
     .section1 .diagram {
-        flex-direction: column; /* Stack items on smaller screens */
-        align-items: center; /* Center items */
+        flex-direction: column;
+        /* Stack items on smaller screens */
+        align-items: center;
+        /* Center items */
     }
 }
 
 @media (max-width: 480px) {
+    .section1 {
+        width: 95%;
+        padding: 1rem 0rem;
+    }
+
+    .section1 .div hr {
+        margin-top: 10px;
+    }
+
     .section1 .div h1 {
-        font-size: 2rem; /* Smaller font size for mobile */
+        font-size: 1.5rem;
+        ;
+        /* Smaller font size for mobile */
     }
 
     .section1 .div span {
-        font-size: 2rem; /* Smaller font size for mobile */
+        font-size: 1.5rem;
+        ;
+        /* Smaller font size for mobile */
     }
 
     .section1 .div p {
-        font-size: 1rem; /* Smaller font size for mobile */
+        font-size: 1rem;
+        line-height: 20px;
+        margin-top: 2px;
+        padding: 1rem 0rem;
+        /* Smaller font size for mobile */
     }
 
-    .section1 .diagram p{
-        font-size: 1.1rem;
+    .section1 .diagram {
+        margin: 0rem 0rem 2rem 0rem;
+    }
+
+    .section1 .diagram p {
+        font-size: 0.9rem;
+        text-align: justify;
+        padding: 3px;
     }
 
     .section1 .button button {
-        height: 70px; /* Smaller height for mobile */
-        font-size: 1rem; /* Further adjust font size */
-        margin-top: 2rem; /* Adjust margin for spacing */
+        height: 30px;
+        /* Smaller height for mobile */
+        font-size: 0.8rem;
+        /* Further adjust font size */
+        margin-top: 2px;
+        /* Adjust margin for spacing */
+        padding: 0;
     }
 }
 
@@ -352,7 +465,8 @@
 
 .section2 .inner2 {
     width: 88%;
-    padding: 5rem 0; /* Vertical spacing */
+    padding: 5rem 0;
+    /* Vertical spacing */
     color: white;
 }
 
@@ -365,7 +479,8 @@
 
 .inner2 span {
     font-family: "Poppins", sans-serif;
-    font-size: 3rem; /* Base size */
+    font-size: 3rem;
+    /* Base size */
 }
 
 .inner2 div {
@@ -385,39 +500,69 @@
 
 .inner2 img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
+    /* Maintain aspect ratio */
     margin: 5rem 0;
 }
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
-    .inner2 h1, .inner2 span {
-        font-size: 2.5rem; /* Adjust for medium screens */
+
+    .inner2 h1,
+    .inner2 span {
+        font-size: 2.5rem;
+        /* Adjust for medium screens */
     }
 
     .inner2 p {
-        font-size: 1.2rem; /* Adjust for medium screens */
+        font-size: 1.2rem;
+        /* Adjust for medium screens */
     }
 }
 
 
 @media (max-width: 480px) {
-    .inner2 h1, .inner2 span {
-        font-size: 2rem; /* Adjust for extra small screens */
+    .section2 .inner2 {
+        width: 95%;
+        padding: 1.5rem 0;
+    }
+
+    .inner2 h1 {
+        padding-top: 1px;
+    }
+
+    .inner2 h1,
+    .inner2 span {
+        font-size: 1.5rem;
+
+        /* Adjust for extra small screens */
     }
 
     .inner2 p {
-        font-size: 0.875rem; /* Adjust for extra small screens */
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        /* Adjust for extra small screens */
     }
 
     .inner2 div {
-        width: 14%; /* Make the div responsive */
+        width: 98px;
+        height: 10px;
+        background-color: #d9d9d9;
+        margin: 1rem 0;
     }
+
+    .inner2 img {
+        width: 100%;
+        height: auto;
+        /* Maintain aspect ratio */
+        margin: 1rem 0;
+    }
+
 }
 
 
 /* Section 3 */
-.section3 { 
+.section3 {
     width: 100%;
     background-color: #262829;
     display: flex;
@@ -426,7 +571,8 @@
 
 .section3 .inner3 {
     width: 88%;
-    padding: 5rem 0; /* Vertical spacing */
+    padding: 5rem 0;
+    /* Vertical spacing */
 }
 
 .inner3 h1,
@@ -443,7 +589,7 @@
 
 .inner3 p {
     font-family: "Poppins", sans-serif;
-    font-size: 1.4375rem;
+    font-size: 1rem;
     margin: 5rem 0;
     color: white;
 }
@@ -455,14 +601,19 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    padding: 1rem; /* Added padding for better spacing */
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+    padding: 1rem;
+    /* Added padding for better spacing */
 }
 
 .inner3 .card .div {
-    flex: 1 1 45%; /* Default responsive sizing */
-    padding: 2rem; /* Reduced padding for better responsiveness */
-    box-sizing: border-box; /* Include padding in width calculations */
+    flex: 1 1 45%;
+    /* Default responsive sizing */
+    padding: 2rem;
+    /* Reduced padding for better responsiveness */
+    box-sizing: border-box;
+    /* Include padding in width calculations */
     color: white;
 }
 
@@ -491,62 +642,16 @@
 }
 
 .inner3 .card img {
-    flex: 1 1 45%; /* Default responsive sizing */
+    flex: 1 1 45%;
+    /* Default responsive sizing */
     border-radius: 10px;
-    padding: 1rem; /* Reduced padding for better responsiveness */
-    max-width: 100%; /* Ensure images don't overflow */
-    height: auto; /* Maintain aspect ratio */
+    padding: 1rem;
+    /* Reduced padding for better responsiveness */
+    max-width: 100%;
+    /* Ensure images don't overflow */
+    height: auto;
+    /* Maintain aspect ratio */
 }
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .inner3 h1 {
-        font-size: 2.5rem; /* Decrease font size */
-    }
-    
-    .inner3 p {
-        font-size: 1.2rem; /* Decrease paragraph font size */
-    }
-    
-    .inner3 .card .div {
-        flex: 1 1 48%; /* Adjust for medium screens */
-        padding: 1.5rem; /* Reduce padding */
-    }
-    
-    .inner3 .card img {
-        flex: 1 1 100%; /* Make images full width */
-        margin: 0 auto; /* Center images */
-    }
-}
-
-@media (max-width: 480px) {
-    .inner3 h1 {
-        font-size: 2.5rem; /* Further decrease font size */
-    }
-    
-    .inner3 p {
-        font-size: 1rem; /* Further decrease paragraph font size */
-        margin: 3rem 0; /* Adjust margins */
-    }
-    
-    .inner3 .card .div {
-        flex: 1 1 100%; /* Stack cards on smaller screens */
-        padding: 1rem; /* Further reduce padding */
-    }
-
-    .inner3 .card .div p {
-        font-size: 18px;
-    }
-
-    .inner3 .card .div h1 {
-        font-size: 30px;
-    }
-    
-    .inner3 .card img {
-        padding: 0.5rem; /* Reduce image padding */
-    }
-}
-
 
 /* Button styling */
 .inner3 .button {
@@ -554,32 +659,126 @@
 }
 
 .inner3 .button button {
-    width: 90%; /* Responsive width */
-    max-width: 481px; /* Keep a max width */
+    width: 90%;
+    /* Responsive width */
+    max-width: 481px;
+    /* Keep a max width */
     height: 80px;
     border: 1px solid #98f9ff;
     padding: 10px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: #ffffff;
-    font-size: 1.25rem; /* Base font size */
+    font-size: 1.25rem;
+    /* Base font size */
     margin-top: 3rem;
-    background-color: transparent; /* Background for visibility */
-    border-radius: 5px; /* Aesthetics */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    background-color: transparent;
+    /* Background for visibility */
+    border-radius: 5px;
+    /* Aesthetics */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition */
 }
 
 /* Hover effect */
 .inner3 .button button:hover {
-    background-color: #81e6ff; /* Darker shade*/
+    background-color: #81e6ff;
+    /* Darker shade*/
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .inner3 h1 {
+        font-size: 2.5rem;
+        /* Decrease font size */
+    }
+
+    .inner3 p {
+        font-size: 1.2rem;
+        /* Decrease paragraph font size */
+    }
+
+    .inner3 .card .div {
+        flex: 1 1 48%;
+
+    }
+
+    .inner3 .card img {
+        flex: 1 1 100%;
+        /* Make images full width */
+        margin: 0 auto;
+        /* Center images */
+    }
+}
+
+@media (max-width: 480px) {
+    .section3 .inner3 {
+        width: 95%;
+        padding: 1rem 0;
+        /* Vertical spacing */
+    }
+
+    .inner3 h1,
+    .inner3 h1 span {
+        font-size: 1.5rem;
+        ;
+        /* Further decrease font size */
+    }
+
+    .inner3 p {
+        font-size: 1rem;
+        /* Further decrease paragraph font size */
+        margin: 1rem 0;
+        /* Adjust margins */
+    }
+
+    .inner3 .card .div {
+        flex: 1 1 100%;
+        /* Stack cards on smaller screens */
+        padding: 1rem 0rem;
+        /* Further reduce padding */
+    }
+
+    .inner3 .card .div p {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .inner3 .card .div h1 {
+        font-size: 1.5rem;
+    }
+
+    .inner3 .card img {
+        padding: 0rem;
+        width: 100%;
+        height: 300px;
+        /* Reduce image padding */
+    }
+
+    .inner3 .button button {
+        width: 90%;
+        /* Responsive width */
+        max-width: 481px;
+        /* Keep a max width */
+        height: 50px;
+        border: 1px solid #98f9ff;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 0.8rem;
+    }
+}
+
 
 /* Section 4 */
 .section4 {
     width: 88%;
     margin: 0 auto;
-    height: auto; /* Change to auto for responsiveness */
-    padding: 20px 0; /* Add padding for smaller screens */
+    height: auto;
+    /* Change to auto for responsiveness */
+    padding: 20px 0;
+    /* Add padding for smaller screens */
 }
 
 .section4 .div {
@@ -588,7 +787,7 @@
     text-align: center;
 }
 
-.div h1 {
+.section4 .div h1 {
     font-family: "Poppins", sans-serif;
     color: #262829;
     font-weight: 600;
@@ -597,7 +796,7 @@
     letter-spacing: -3%;
 }
 
-.div span {
+.section4 .div span {
     font-family: "Poppins", sans-serif;
     color: #5f6264;
     font-weight: 300;
@@ -606,7 +805,7 @@
     letter-spacing: -3%;
 }
 
-.div p {
+.section4 .div p {
     width: 100%;
     font-family: "Poppins", sans-serif;
     color: #5f6264;
@@ -615,27 +814,36 @@
     line-height: 38px;
     letter-spacing: -3%;
     text-align: center;
-    padding: 100px 50px; /* Adjust padding for smaller screens */
+    padding: 100px 50px;
+    /* Adjust padding for smaller screens */
 }
 
 .section4 .testimonials {
-    width: 100%; /* Change width to 100% for responsiveness */
-    max-width: 1050px; /* Use max-width instead */
-    height: auto; /* Change to auto for responsiveness */
+    width: 100%;
+    /* Change width to 100% for responsiveness */
+    max-width: 1050px;
+    /* Use max-width instead */
+    height: auto;
+    /* Change to auto for responsiveness */
     color: #BCBCBC;
     margin: 0 auto;
     display: flex;
-   justify-content: space-between;  /* Stack testimonials vertically on smaller screens */
+    justify-content: space-between;
+    /* Stack testimonials vertically on smaller screens */
 }
 
 .testimonials .test-1,
 .testimonials .test-2 {
-    width: 100%; /* Change to 100% for responsiveness */
-    max-width: 480px; /* Maintain max width */
+    width: 100%;
+    /* Change to 100% for responsiveness */
+    max-width: 480px;
+    /* Maintain max width */
     border-radius: 20px;
     border: 1px solid #eff0f6;
-    margin: 0 auto; /* Center testimonials */
-    margin-bottom: 20px; /* Add margin for spacing */
+    margin: 0 auto;
+    /* Center testimonials */
+    margin-bottom: 20px;
+    /* Add margin for spacing */
 }
 
 .test-1 .discription1,
@@ -648,11 +856,12 @@
 .test-2 .discription2 p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    color: #5f6264; 
+    color: #5f6264;
     font-size: 18px;
     line-height: 38px;
     letter-spacing: -3%;
-    margin: 20px 50px; /* Adjust margin for consistency */
+    margin: 20px 50px;
+    /* Adjust margin for consistency */
 }
 
 .test-1 .discription1 .img,
@@ -695,40 +904,101 @@
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .div h1, .div span {
-        font-size: 36px; /* Adjust for smaller screens */
+
+    .section4 .div h1,
+    .section4 .div span {
+        font-size: 36px;
+        /* Adjust for smaller screens */
         line-height: 50px;
     }
 
     .div p {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 18px;
+        /* Adjust font size for smaller screens */
     }
 
     .testimonials {
-        flex-direction: column; /* Stack testimonials */
+        flex-direction: column;
+        /* Stack testimonials */
     }
 
-    .test-1, .test-2 {
-        width: 90%; /* Adjust width */
+    .test-1,
+    .test-2 {
+        width: 90%;
+        /* Adjust width */
     }
 }
 
 @media (max-width: 480px) {
-    .div h1, .div span {
-        font-size: 28px; /* Further adjustments */
+
+    .section4 {
+        width: 95%;
     }
-    .section4 .testimonials{
+
+    .section4 .div {
+        padding-top: 3px;
+    }
+
+    .section4 .div h1,
+    .section4 .div span {
+        font-size: 1.5rem;
+        /* Further adjustments */
+    }
+
+    .section4 .div p {
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        line-height: 25px;
+        padding: 1rem 0rem;
+    }
+
+    .section4 .testimonials {
+        width: 80%;
         display: flex;
         gap: 5px;
     }
-    .div p {
-        font-size: 16px;
-        padding: 50px 20px; /* Adjust padding */
+
+    .test-1 .discription1,
+    .test-2 .discription2 {
+        width: 100%;
+        height: auto;
+        padding: 10px;
     }
+
+    .testimonials .test-1,
+    .testimonials .test-2 {
+        margin-bottom: 10px;
+    }
+
     .test-1 .discription1 p,
     .test-2 .discription2 p {
-        line-height: 28px;
+        font-size: 0.9rem;
+        line-height: 20px;
         margin: 0px;
+    }
+
+    .discription1 .img img,
+    .discription2 .img img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .discription1 .img div,
+    .discription2 .img div {
+        margin: auto 7px;
+    }
+
+    .discription1 .img div p,
+    .discription2 .img div p {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .discription1 .img div span,
+    .discription2 .img div span {
+        font-size: 15px;
     }
 }
 
@@ -800,74 +1070,116 @@
 }
 
 .inner5 .button button {
-    width: 481px; /* Base width */
-    height: 93px; /* Base height */
+    width: 481px;
+    /* Base width */
+    height: 93px;
+    /* Base height */
     border: 1px solid #5f6264;
     padding: 10px;
     gap: 38px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: #5f6264;
-    font-size: 20px; /* Base font size */
+    font-size: 20px;
+    /* Base font size */
     /* line-height: 60px; Base line height */
     letter-spacing: -3%;
     text-align: center;
     margin-top: 150px;
-    background-color: white; /* Default background color */
-    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+    background-color: white;
+    /* Default background color */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    /* Smooth transition */
 }
 
 /* Hover Effect */
 .inner5 .button button:hover {
-    background-color: #5f6264; /* Change background color on hover */
-    color: white; /* Change text color on hover */
-    transform: translateY(-2px); /* Slight lift effect */
-    cursor: pointer; /* Change cursor to pointer */
+    background-color: #5f6264;
+    /* Change background color on hover */
+    color: white;
+    /* Change text color on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+    cursor: pointer;
+    /* Change cursor to pointer */
 }
 
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+
     .inner5 span,
     .inner5 h1 {
-        font-size: 36px; /* Adjust for tablets */
-        line-height: 50px; /* Adjust line height */
+        font-size: 36px;
+        /* Adjust for tablets */
+        line-height: 50px;
+        /* Adjust line height */
     }
 
     .inner5 p {
-        font-size: 20px; /* Adjust for tablets */
-        line-height: 30px; /* Adjust line height */
-        margin-top: 1.5rem; /* Adjust margin */
-        margin-bottom: 1.5rem; /* Adjust margin */
+        font-size: 20px;
+        /* Adjust for tablets */
+        line-height: 30px;
+        /* Adjust line height */
+        margin-top: 1.5rem;
+        /* Adjust margin */
+        margin-bottom: 1.5rem;
+        /* Adjust margin */
     }
 
     .inner5 .button button {
-        width: 100%; /* Full width button for smaller screens */
-        height: 60px; /* Adjust height */
-        font-size: 18px; /* Adjust font size */
-        margin-top: 100px; /* Adjust margin */
+        width: 100%;
+        /* Full width button for smaller screens */
+        height: 60px;
+        /* Adjust height */
+        font-size: 18px;
+        /* Adjust font size */
+        margin-top: 100px;
+        /* Adjust margin */
     }
 }
 
 @media (max-width: 480px) {
+    .section5 {
+        margin-top: 1rem;
+    }
+
+    .section5 .inner5 {
+        width: 95%;
+    }
+
     .inner5 span,
     .inner5 h1 {
-        font-size: 28px; /* Further adjust for mobile */
+        font-size: 1.5rem;
+        /* Further adjust for mobile */
     }
 
     .inner5 p {
-        font-size: 18px; /* Further adjust for mobile */
-        line-height: 28px; /* Adjust line height */
-        margin-top: 1rem; /* Adjust margin */
-        margin-bottom: 1rem; /* Adjust margin */
+        font-size: 1rem;
+        line-height: 26px;
     }
 
     .inner5 .button button {
-        height: 50px; /* Adjust height for mobile */
-        font-size: 16px; /* Adjust font size for mobile */
-        margin-top: 80px; /* Adjust margin */
+        height: 50px;
+        /* Adjust height for mobile */
+        font-size: 16px;
+        /* Adjust font size for mobile */
+        margin-top: 80px;
+        /* Adjust margin */
         padding: 0%;
         /* line-height: 50px; */
+    }
+
+    .inner5 hr {
+        margin-top: 5px;
+    }
+
+    .inner5 .button button {
+        width: 80%;
+        /* Full width button for smaller screens */
+        height: 50px;
+        font-size: 0.8rem;
+        margin-top: 10px;
     }
 }
 
@@ -884,12 +1196,14 @@
     height: fit-content;
 }
 
-.section6 .inner6 span{
+.section6 .inner6 span {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     color: #262829;
-    font-size: 50px; /* Base font size */
-    line-height: 75px; /* Base line height */
+    font-size: 50px;
+    /* Base font size */
+    line-height: 75px;
+    /* Base line height */
     letter-spacing: -3%;
     text-align: left;
 }
@@ -898,8 +1212,10 @@
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #262829;
-    font-size: 50px; /* Base font size */
-    line-height: 75px; /* Base line height */
+    font-size: 50px;
+    /* Base font size */
+    line-height: 75px;
+    /* Base line height */
     letter-spacing: -3%;
 }
 
@@ -911,8 +1227,10 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: #5f6264;
-    font-size: 23px; /* Base font size */
-    line-height: 38px; /* Base line height */
+    font-size: 23px;
+    /* Base font size */
+    line-height: 38px;
+    /* Base line height */
     letter-spacing: -3%;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -926,12 +1244,16 @@
 }
 
 .inner6 div button {
-    width: 272px; /* Base width */
-    height: 51px; /* Base height */
+    width: 272px;
+    /* Base width */
+    height: 51px;
+    /* Base height */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 15px; /* Base font size */
-    line-height: 35px; /* Base line height */
+    font-size: 15px;
+    /* Base font size */
+    line-height: 35px;
+    /* Base line height */
     letter-spacing: -3%;
     border-radius: 3px;
     padding: 10px;
@@ -941,23 +1263,30 @@
     gap: 10px;
     margin-top: 40px;
     margin-inline: center;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    /* Smooth transition */
 }
 
 /* Hover Effect */
 .inner6 div button:hover {
-    background-color: #5f6264; /* Change background color on hover */
-    color: white; /* Change text color on hover */
-    transform: translateY(-2px); /* Slight lift effect */
-    cursor: pointer; /* Change cursor to pointer */
+    background-color: #5f6264;
+    /* Change background color on hover */
+    color: white;
+    /* Change text color on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+    cursor: pointer;
+    /* Change cursor to pointer */
 }
 
 
 .section6 .inner6 center span {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 23px; /* Base font size */
-    line-height: 38px; /* Base line height */
+    font-size: 23px;
+    /* Base font size */
+    line-height: 38px;
+    /* Base line height */
     letter-spacing: -3%;
     color: #5f6264;
     text-align: center;
@@ -970,101 +1299,157 @@
 }
 
 .inner6 .social-media-icon i {
-    font-size: 32px; /* Base icon size */
+    font-size: 32px;
+    /* Base icon size */
     padding: 5px;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+
     .section6 .inner6 span,
     .inner6 h1 {
-        font-size: 26px; /* Adjust for tablets */
-        line-height: 50px; /* Adjust line height */
+        font-size: 26px;
+        /* Adjust for tablets */
+        line-height: 50px;
+        /* Adjust line height */
     }
 
     .inner6 p {
-        font-size: 20px; /* Adjust for tablets */
-        line-height: 30px; /* Adjust line height */
-        margin-top: 60px; /* Adjust margin */
-        margin-bottom: 60px; /* Adjust margin */
+        font-size: 20px;
+        /* Adjust for tablets */
+        line-height: 30px;
+        /* Adjust line height */
+        margin-top: 60px;
+        /* Adjust margin */
+        margin-bottom: 60px;
+        /* Adjust margin */
     }
 
     .inner6 div button {
-        width: 100%; /* Full width button for tablets */
-        height: 50px; /* Adjust height */
-        font-size: 13px; /* Adjust font size */
+        width: 100%;
+        /* Full width button for tablets */
+        height: 50px;
+        /* Adjust height */
+        font-size: 13px;
+        /* Adjust font size */
         line-height: 16px;
     }
+
     .inner6 div button:hover {
-        background-color: #5f6264; /* Change background color on hover */
-        color: white; /* Change text color on hover */
-        transform: translateY(-2px); /* Slight lift effect */
-        cursor: pointer; /* Change cursor to pointer */
+        background-color: #5f6264;
+        /* Change background color on hover */
+        color: white;
+        /* Change text color on hover */
+        transform: translateY(-2px);
+        /* Slight lift effect */
+        cursor: pointer;
+        /* Change cursor to pointer */
     }
 }
 
 @media (max-width: 480px) {
+
+    .section6 {
+        margin: 30px 0px;
+    }
+
+    .section6 .inner6 {
+        width: 95%;
+    }
+
     .section6 .inner6 span,
     .inner6 h1 {
-        font-size: 26px; /* Adjust for tablets */
-        line-height: 50px; /* Adjust line height */
+        font-size: 1.5rem;
+        /* Adjust for tablets */
+        line-height: 35px;
+        /* Adjust line height */
     }
 
     .inner6 p {
-        font-size: 18px; /* Further adjust for mobile */
-        line-height: 28px; /* Adjust line height */
-        margin-top: 40px; /* Adjust margin */
-        margin-bottom: 40px; /* Adjust margin */
+        font-size: 1rem;
+        /* Further adjust for mobile */
+        line-height: 28px;
+        /* Adjust line height */
+        margin: 10px 0px;
+    }
+
+    .inner6 hr {
+        margin-top: 10px;
     }
 
     .inner6 div button {
-        font-size: 12px; /* Adjust font size for mobile */
-        margin-top: 30px; /* Adjust margin */
+        font-size: 0.8rem;
+        /* Adjust font size for mobile */
+        margin-top: 10px;
+        /* Adjust margin */
         line-height: 15px;
     }
+
     .inner6 div button:hover {
-        background-color: #5f6264; /* Change background color on hover */
-        color: white; /* Change text color on hover */
-        transform: translateY(-2px); /* Slight lift effect */
-        cursor: pointer; /* Change cursor to pointer */
+        background-color: #5f6264;
+        /* Change background color on hover */
+        color: white;
+        /* Change text color on hover */
+        transform: translateY(-2px);
+        /* Slight lift effect */
+        cursor: pointer;
+        /* Change cursor to pointer */
+    }
+
+    .section6 .inner6 center span {
+        font-size: 1rem;
+        line-height: 10px;
+    }
+
+    .inner6 .social-media-icon {
+        padding: 10px 0;
     }
 
     .inner6 .social-media-icon i {
-        font-size: 2rem; /* Adjust icon size for mobile */
+        font-size: 1.5rem;
+        /* Adjust icon size for mobile */
     }
 }
 
 .footer {
     width: 100%;
-    height: fit-content; /* Changed to fit-content for better flexibility */
+    height: fit-content;
+    /* Changed to fit-content for better flexibility */
     color: white;
     background-color: black;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 23px; /* Base font size */
-    line-height: 38px; /* Base line height */
+    font-size: 23px;
+    /* Base font size */
+    line-height: 38px;
+    /* Base line height */
     letter-spacing: -3%;
     display: flex;
     justify-content: center;
-    align-items: center; /* Center items vertically */
-    padding: 20px 0; /* Adjusted for top and bottom padding */
+    align-items: center;
+    /* Center items vertically */
+    padding: 20px 0;
+    /* Adjusted for top and bottom padding */
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .footer {
-        font-size: 20px; /* Adjust font size for tablets */
-        line-height: 30px; /* Adjust line height for tablets */
-        padding: 15px 0; /* Adjust padding for tablets */
+        font-size: 20px;
+        /* Adjust font size for tablets */
+        line-height: 30px;
+        /* Adjust line height for tablets */
+        padding: 15px 0;
+        /* Adjust padding for tablets */
     }
 }
 
 @media (max-width: 480px) {
     .footer {
-        font-size: 15px; /* Further adjust font size for mobile */
-        line-height: 28px; /* Further adjust line height for mobile */
-        padding: 10px 0; /* Adjust padding for mobile */
+        font-size: 0.8rem;
+        /* Further adjust line height for mobile */
+        padding: 10px 0;
+        /* Adjust padding for mobile */
     }
 }
-
-
