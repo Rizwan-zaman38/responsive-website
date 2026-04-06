@@ -406,7 +406,7 @@
 @media (max-width: 480px) {
     .section1 {
         width: 95%;
-        padding: 1rem 0rem;
+        padding: 3rem 0rem;
     }
 
     .section1 .div hr {
@@ -524,7 +524,7 @@
 @media (max-width: 480px) {
     .section2 .inner2 {
         width: 95%;
-        padding: 1.5rem 0;
+        padding: 3rem 0;
     }
 
     .inner2 h1 {
@@ -714,7 +714,7 @@
 @media (max-width: 480px) {
     .section3 .inner3 {
         width: 95%;
-        padding: 1rem 0;
+        padding: 3rem 0;
         /* Vertical spacing */
     }
 
@@ -933,6 +933,7 @@
 
     .section4 {
         width: 95%;
+        padding: 3rem 0rem;
     }
 
     .section4 .div {
@@ -1007,7 +1008,7 @@
     height: fit-content;
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    padding: 5rem 0rem;
 }
 
 .section5 .inner5 {
@@ -1141,7 +1142,7 @@
 
 @media (max-width: 480px) {
     .section5 {
-        margin-top: 1rem;
+        padding: 3rem 0rem;
     }
 
     .section5 .inner5 {
